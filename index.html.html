@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, intial-scale=1 ">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <script src="js/jquery-3.1.1js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="m-slide.js"></script>
+    <link rel="stylesheet" href="m-slide.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row jambotron">
+            <div class="col-sm-12">
+             <center><h1>Manual SlideShow</h1></center>   
+                <marquee behavior="" direction=""><img class="slide" src="images/images.jpg" alt="" style="with:100%"> <img class="slide"  src="images/images1.jpg" alt="" style="with:100%">  <img class="slide"  src="images/images2.jpg" alt="" style="with:100%"> </marquee>
+            </div>
+
+        </div>
+    </div>
+
+
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF IMAGES
+path[0] = "images/images.jpg";
+path[1] = "images/images1.jpg";
+path[2] = "images/images2.jpg";
+
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<br><br>
+<div class="container">
+    <div class="col-sm-4">
+
+    </div>
+<div class="col-sm-8">
+<h2 class="p1">Project Of Syed Kashif Bukhari</h2> 
+</div>
+<div class="col-sm-4">
+
+</div>
+</div>
+<br><br><br>
+<div class="container-fluid">
+    <div class="col-sm-12">
+       <center> <img height="400" name="slide" src="images/images.jpg" width="600" /></center>
+    </div>
+
+</div>
+
+
+</body>
+</html>
